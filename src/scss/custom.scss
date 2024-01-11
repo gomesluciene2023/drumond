@@ -1,0 +1,61 @@
+.bg-banner {
+    background-image: url(../images/Vector-5.png);
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.gallery img{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+    width: 100%;
+}
+
+/* Estilo para os botões de controle (setas) no modal */
+.modal-controls button {
+    font-size: 2rem; /* Tamanho maior para as setas */
+    color: rgb(85, 85, 85); /* Cor preta */
+    padding: 0.25rem 0.5rem; /* Espaçamento interno dos botões */
+    text-decoration: none;
+}
+
+/* Alinhamento centralizado dos botões */
+.modal-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+//Botão Voltar ao Topo
+#btnScrollToTop {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed; /* Mantém o botão fixo na tela */
+    bottom: 20px; /* Distância do botão em relação ao fundo */
+    right: 20px; /* Distância do botão em relação à direita */
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #603813;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99; /* Garante que o botão apareça sobre outros elementos */
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #47280b;
+    color: #fff;
+  }
+  
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/_variables";
+
