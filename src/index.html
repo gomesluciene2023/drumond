@@ -124,53 +124,127 @@
             <div class="row" id="cardapio">
 
                 <!-- Inicio Lado esquerdo -->
-                <div class="col-md-4">
+                <div class="accordion col-md-4" id="accordionExample">
                     <h5>Categorias</h5>
-                    <h6 class="mb-0 mt-3"><a href="#salgados-geral" data-bs-target="conteudo1" class="list-group-item list-group-item-action">Salgados</a></h6>
-                    <div class="lista-cat" id="menu-cat">
-                        <a href="#salg-fritos" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo2">Fritos (20g)</a>
-                        <a href="#salg-assados" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo3">Assados</a>
-                        <a href="#salg-empadinha" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo4">Empadinhas</a>
-                        <a href="#salg-fritos-25" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo5">Salgados fritos (25g)</a>
+                     <!--Categoria Salgados-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-brown text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="mb-0 mt-3"><a href="#salgados-geral" data-bs-target="conteudo1" class="list-group-item list-group-item-action">Salgados</a></strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="lista-cat" id="menu-cat">
+                                <a href="#salg-fritos" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo2">Fritos (20g)</a>
+                                <a href="#salg-assados" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo3">Assados</a>
+                                <a href="#salg-empadinha" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo4">Empadinhas</a>
+                                <a href="#salg-fritos-25" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo5">Salgados fritos (25g)</a>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <h6 class="mb-0 mt-3"><a href="#tortas-gerais" data-bs-target="conteudo6" class="list-group-item list-group-item-action">Tortas salgadas</a></h6>
-                        <a href="#torta-salg-assada" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo7">Torta salgada assada</a>
-                        <a href="#torta-salg-pao" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo8">Torta salgada de<br>pão de forma</a>
-                    <h6 class="mb-0 mt-3"><a href="#lanche-geral" data-bs-target="conteudo9" class="list-group-item list-group-item-action">Lanches</a></h6>
-                        <a href="#lanche-pizza" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo10">Pizza lanche</a>
-                        <a href="#lanche-mini-pizza" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo11">Mini pizza</a>
-                        <a href="#lanche-paodequeijo" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo12">Pão de queijo</a>
-                        <a href="#lanche-rocam-salg" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo13">Rocambole salgado</a>
-                    <h6 class="mb-0 mt-4"><a href="#lanche-mini-sand" data-bs-target="conteudo14" class="list-group-item list-group-item-action">Mini sanduíche</a></h6>
-                    <h6 class="mb-0 mt-4"><a href="#lanche-empadao" data-bs-target="conteudo15" class="list-group-item list-group-item-action">Empadão</a></h6>
-                    <h6 class="mb-0 mt-4"><a href="#doces-geral" data-bs-target="conteudo16" class="list-group-item list-group-item-action">Doces e Sobremesas</a></h6>
-                    <div class="lista-cat" id="menu-cat">
-                        <a href="#doce-sal-frut" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo17">Salada de frutas</a>
-                        <a href="#doce-tradicionais" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo18">Docinhos tradicionais</a>
-                        <a href="#doce-folhado" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo19">Mini docinhos folhados</a>
-                        <a href="#doce-quindin" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo20">Quindin</a>
-                        <a href="#doce-queijad" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo21">Queijadinha</a>
-                        <a href="#doce-brownie" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo22">Brownie</a>
-                        <a href="#doce-sonho" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo23">Sonho</a>
-                        <a href="#doce-minicone" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo24">Mini cone</a>
-                        <a href="#doce-trufas" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo25">Trufas</a>
-                        <a href="#doce-churros" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo26">Mini churros doce de leite (20g)</a>
-                        <a href="#doces-caseiros" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo27">Doces caseiros</a>
-                        <a href="#doce-rocam" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo28">Rocambole doce</a>
+                    <!--Fim da categoria Salgados-->
+                    <!--Categoria Tortas Salgadas -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Tortas salgadas</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <a href="#torta-salg-assada" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo7">Torta salgada assada</a>
+                          <a href="#torta-salg-pao" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo8">Torta salgada de<br>pão de forma</a>
+                        </div>
+                      </div>
                     </div>
-                    <h6 class="mb-0 mt-4"><a href="#bolos-gerais" data-bs-target="conteudo29" class="list-group-item list-group-item-action">Bolos</a></h6>
-                    <div class="lista-cat" id="menu-cat">
-                        <a href="#bolo-tema" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo30">Bolos temáticos</a>
+                    <!--Fim da categoria Tortas Salgadas -->
+                    <!--Categoria Lanches -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Lanches</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a href="#lanche-pizza" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo10">Pizza lanche</a>
+                            <a href="#lanche-mini-pizza" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo11">Mini pizza</a>
+                            <a href="#lanche-paodequeijo" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo12">Pão de queijo</a>
+                            <a href="#lanche-rocam-salg" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteúdo13">Rocambole salgado</a>
+                            <a href="#lanche-mini-sand" data-bs-target="conteudo14" class="list-group-item list-group-item-action offset-md-1">Mini sanduíche</a>
+                            <a href="#lanche-mini-sand" data-bs-target="conteudo14" class="list-group-item list-group-item-action offset-md-1">Empadão</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fim da categoria Lanches-->
+                    <!--Categoria Doces e Sobremesas -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <strong>Doces e Sobremesas</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <a href="#doce-sal-frut" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo17">Salada de frutas</a>
+                            <a href="#doce-tradicionais" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo18">Docinhos tradicionais</a>
+                            <a href="#doce-folhado" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo19">Mini docinhos folhados</a>
+                            <a href="#doce-quindin" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo20">Quindin</a>
+                            <a href="#doce-queijad" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo21">Queijadinha</a>
+                            <a href="#doce-brownie" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo22">Brownie</a>
+                            <a href="#doce-sonho" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo23">Sonho</a>
+                            <a href="#doce-minicone" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo24">Mini cone</a>
+                            <a href="#doce-trufas" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo25">Trufas</a>
+                            <a href="#doce-churros" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo26">Mini churros doce de leite (20g)</a>
+                            <a href="#doces-caseiros" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo27">Doces caseiros</a>
+                            <a href="#doce-rocam" class="list-group-item list-group-item-action offset-md-1" data-bs-target="conteudo28">Rocambole doce</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Fim da categoria Doces e Sobremesas-->
+                      <!--Categoria Bolos-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <strong>Bolos</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <a href="#bolo-tema" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo30">Bolos temáticos</a>
                         <a href="#bole-de-corte" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo31">Bolos de corte</a>
                         <a href="#bolo-caseiro" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo32">Bolos caseiros</a>
-                    </div>
-                    <h6 class="mb-0 mt-4"><a href="#comemorativas" data-bs-target="conteudo33" class="list-group-item list-group-item-action">Datas Comemorativas</a></h6>
-                    <div class="lista-cat" id="menu-cat">
-                        <a href="#festa-junina" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo34">Festa Junina</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Fim da categoria bolos-->
+                      <!--Categoria datas comemorativas-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <strong>Datas Comemorativas</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <a href="#festa-junina" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo34">Festa Junina</a>
                         <a href="#natal" class="list-group-item list-group-item-action offset-md-1" data-target="conteudo35">Natal</a>
-                    </div>
-                    <h6 class="mb-0 mt-4"><a href="#bebidas" class="list-group-item list-group-item-action" data-target="conteudo36">Bebidas</a></h6>
-                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!--Fim da categoria Datas Comemorativas-->
+                      <!--Categorias Bebidas-->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-brown text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              <strong>Bebidas</strong>
+                          </button>
+                        </h2>
+                      </div>
+                      <!--Fim da Categoria Bebidas-->
+                  </div>
                 <!-- Final Lado Esquerdo -->
 
                 <!-- Inicio Lado Direito -->
