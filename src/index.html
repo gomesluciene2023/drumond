@@ -127,8 +127,38 @@
         <div class="container">
             <div class="row" id="cardapio">
 
-                <!-- Inicio Lado esquerdo -->
-                <div class="accordion col-md-4" id="accordionExample">
+            <!-- Inicio Lado esquerdo -->
+
+            <!-- Início da navegação para dispositivos móveis -->
+            <div class="d-sm-none mb-4">
+                <div class="row flex-nowrap overflow-auto">
+                    <div class="col">
+                        <a href="#salgados-geral" class="list-group-item list-group-item-action">Salgados</a>
+                    </div>
+                    <div class="col">
+                        <a href="#tortas-salgadas" class="list-group-item list-group-item-action">Tortas&nbsp;Salgadas</a>
+                    </div>
+                    <div class="col">
+                        <a href="#lanches" class="list-group-item list-group-item-action">Lanches</a>
+                    </div>
+                    <div class="col">
+                        <a href="#doces-sobremesas" class="list-group-item list-group-item-action">Doces&nbsp;e&nbsp;Sobremesas</a>
+                    </div>
+                    <div class="col">
+                        <a href="#bolos" class="list-group-item list-group-item-action">Bolos</a>
+                    </div>
+                    <div class="col">
+                        <a href="#datas-comemorativas" class="list-group-item list-group-item-action">Datas&nbsp;Comemorativas</a>
+                    </div>
+                    <div class="col">
+                        <a href="#bebidas" class="list-group-item list-group-item-action">Bebidas</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim da navegação para dispositivos móveis -->
+                
+                <!--exibido somente de tablets para cima-->
+                <div class="accordion col-md-4 d-none d-md-block" id="accordionExample">
                     <h5>Categorias</h5>
                      <!--Categoria Salgados-->
                     <div class="accordion-item">
@@ -252,8 +282,28 @@
                 <!-- Final Lado Esquerdo -->
 
                 <!-- Inicio Lado Direito -->
+
+                <!-- Início Lado Direito (conteúdo de cada categoria) para dispositivos móveis -->
+                <div class="gallery min-vh-100 col-md-12 mt-sm-5 d-sm-block d-md-none" id="conteudo">
                 <!-- Salgados Gerais -->
-                <div class="gallery min-vh-100 col-md-8 mt-sm-3" id="conteudo">
+                    <div id="salgados-geral" class="conteudo-item">
+                        <div class="row flex-nowrap overflow-auto">
+                            <div class="col">
+                                <img src="images/salg-fritos-1.jpg" class="gallery-item bg-white p-1" alt="gallery" data-toggle="modal" data-bs-target="#gallery-modal" data-title="Salgadinhos Fritos - 18 a 20g" data-description="Bolinho de aipim com carne moída ou carne seca, bolinha de queijo, bolinha de queijo com alho poro, cigarrilha de queijo e presunto, coxinha, croquete de carne, croquete de milho, croquete de calabresa, enroladinho de salsicha, polentinha com linguiça toscana, quibe, travesseirinho de carne moída">
+                            </div>
+                            <div class="col">
+                                <img src="images/salg-fritos-2.jpg" class="gallery-item bg-white p-1" alt="gallery" data-toggle="modal" data-bs-target="#gallery-modal" data-title="Salgadinhos Fritos - 25g" data-description="Bolinho de feijoada, Risole de camarão - Cento: R$ 90,00 | Caixa (20 unid): R$ 25.00">
+                            </div>
+                            <!-- Adicione mais itens conforme necessário -->
+                        </div>
+                    </div>
+                    <!-- Adicione mais categorias conforme necessário -->
+                </div>
+                <!-- Fim Lado Direito para dispoisitivos móveis -->
+
+                <!--exibido somente de tablets para cima-->
+                <!-- Salgados Gerais -->
+                <div class="gallery min-vh-100 col-md-8 mt-sm-3 d-none d-md-block" id="conteudo">
                     <div id="salgados-geral" class="conteudo-item">
                         <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-4">
                             <div class="col">
